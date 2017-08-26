@@ -1,7 +1,9 @@
 console.log('hello world!!!!');
 
+var json = {};
+
 fetch('soi.json', {
   method: 'get'
 }).then(function(response) {
-  console.log(response.body);
+  var json = response.body;
 });
